@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dip"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dip"
+        android:visibility="gone">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbtnBatchChange"
+            android:text="Change Section"
+            android:checked="false"
+            android:layout_weight=".5"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbtnCourseChange"
+            android:text="Change Class"
+            android:layout_weight=".5"
+            android:checked="false"/>
+    </RadioGroup>
+    <Spinner android:id="@+id/spnChangeCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"/>
+
+    <Spinner android:id="@+id/spnChangeBatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="red"
+        android:id="@+id/tvChangeBatchSeats"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <Button android:layout_gravity="center"
+        android:id="@+id/btnChangeCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dip"
+        android:background="@drawable/custom_btn"
+        android:text="Update"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+</LinearLayout>
